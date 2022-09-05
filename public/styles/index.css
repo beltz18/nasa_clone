@@ -1,9 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+:root {
+  --black: #000;
+  --white: #ffe;
+  --gray: #656565;
+  --midgray: #888888;
+  --darkgray: #333;
+  --midblue: #15418c;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(../img/starfield-banner.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+}
+
+.container_header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.container_logo .logo {
+  width: 110px;
+  height: 92px;
+  margin: 11px;
+}
+
+.navs_header {
+  position: absolute;
+  top: 0;
+  left: 152px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+}
+
+.navs_header .up ul, .down ul {
+  color: var(--white);
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.final {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.up input.search {
+  background-color: var(--darkgray);
+  outline: none;
+  border: none;
+  width: 156px;
+  height: 40px;
+  padding: 10px;
+}
+
+.up input.search::placeholder {
+  font-size: 14px;
+}
+
+.up img.share_svg {
+  width: 33px;
+  height: 40px;
+}
+
+.up ul li {
+  padding: 30px 14px;
+  font-size: 20px;
+  border-right: 2px solid var(--gray);
+}
+
+.up ul li:hover {
+  background-color: var(--midblue);
+  cursor: pointer;
+}
+
+.up ul li:last-child {
+  border-right: none;
+  margin-right: 14px;
+}
+
+.down ul li {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-width: 5px;
+  border-right: 1px solid var(--white);
+  background-color: var(--gray);
+}
+
+.down ul li:hover {
+  background-color: var(--midgray);
+  cursor: pointer;
+}
+
+.down ul li:last-child {
+  border-right: none;
+}
+
+main {
+  margin-top: 150px;
+  padding: 0 7px 15px 7px;
+}
+
 h1 {
-  color: blue;
+  color: var(--white);
 }
