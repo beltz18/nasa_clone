@@ -101,10 +101,12 @@ header {
   width: 156px;
   height: 40px;
   padding: 10px;
+  color: var(--white);
 }
 
 .up input.search::placeholder {
   font-size: 14px;
+  color: var(--gray);
 }
 
 .up img.share_svg {
@@ -150,6 +152,3 @@ main {
   padding: 0 7px 15px 7px;
 }
 
-h1 {
-  color: var(--white);
-}

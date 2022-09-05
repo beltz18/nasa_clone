@@ -1,6 +1,6 @@
 {
   "name": "nasa_clone",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a clone from nasa site: https://nasa.gov",
   "main": "src/server.js",
   "scripts": {

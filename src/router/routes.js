@@ -2,10 +2,11 @@ require('dotenv').config()
 
 const { Router } = require('express')
 const router     = Router()
+const { title, arrUl1, arrUl2 } = require('../../util/global')
 
 router.get(process.env.ROOT, async (req,res) => {
-  const arr  = await require('../../util/global')
-  res.render('index', { img: arr })
+  const arrFiles  = await require('../../util/files')
+  res.render('index', { img: arrFiles, title, arrUl1, arrUl2 })
 })
 
 module.exports = router

@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NASA</title>
-  <link rel="stylesheet" href="../styles/index.css">
-</head>
-<body>
+<%- include('./partials/head.ejs') %>
   <header>
     <div class="container_header">
       <div class="container_logo">
@@ -16,13 +7,9 @@
       <div class="navs_header">
         <nav class="up">
           <ul>
-            <li>Missions</li>
-            <li>Galleries</li>
-            <li>NASA TV</li>
-            <li>Follow NASA</li>
-            <li>Downloads</li>
-            <li>About</li>
-            <li>NASA Audiences</li>
+            <% arrUl1.forEach(item => { %>
+              <li><%= item %></li>
+            <% }) %>
           </ul>
           <div class="final">
             <input type="text" class="search" placeholder="Search">
@@ -32,15 +19,9 @@
       </div>
       <nav class="down">
         <ul>
-          <li>Humans in Space</li>
-          <li>Moon to Mars</li>
-          <li>Earth</li>
-          <li>Space Tech</li>
-          <li>Flight</li>
-          <li>Solar System and Beyond</li>
-          <li>STEM Engagement</li>
-          <li>History</li>
-          <li>Benefits to You</li>
+          <% arrUl2.forEach(item => { %>
+            <li><%= item %></li>
+          <% }) %>
         </ul>
       </nav>
     </div>
@@ -49,9 +30,4 @@
   <main>
     
   </main>
-
-  <!-- <% img.svg.forEach(item => { %>
-    <span><%= item %><span>
-  <% }) %> -->
-</body>
-</html>
+<%- include('./partials/footer.ejs') %>
