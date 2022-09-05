@@ -1,2 +1,6 @@
+# dir
 node_modules/
+public/img
+
+# files
 .env
