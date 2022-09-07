@@ -1,4 +1,4 @@
-const title  = "NASA"
+const title  = "NASA Clone"
 const arrUl1 = ['Missions', 'Galleries', 'NASA TV', 'Follow NASA', 'Downloads', 'About', 'NASA Audiences']
 const arrUl2 = ['Humans in Space', 'Moon to Mars', 'Earth', 'Space Tech', 'Flight', 'Solar System and Beyond', 'STEM Engagement', 'History', 'Benefits to You']
 const arrUl3 = ['No Fear Act', 'FOIA', 'Privacy', 'Office of Inspector General', 'Office of Special Counsel', 'Agency Financial Reports', 'Contact NASA']
