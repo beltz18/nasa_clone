@@ -1,16 +1,20 @@
 <%- include('./partials/head.ejs') %>
   <header>
     <div class="container_header">
+      <!-- LOGO NASA -->
       <div class="container_logo">
         <img src="../img/<%= img.svg[1] %>" alt="logo" class="logo">
       </div>
+      <!-- LOGO NASA -->
       <div class="navs_header">
         <nav class="up">
+          <!-- FIRST NAVBAR MENU -->
           <ul>
             <% arrUl1.forEach(item => { %>
               <li><%= item %></li>
             <% }) %>
           </ul>
+          <!-- FIRST NAVBAR MENU -->
           <div class="final">
             <input type="text" class="search" placeholder="Search">
             <img src="../img/<%= img.svg[4] %>" alt="Share" class="share_svg">
@@ -18,16 +22,90 @@
         </nav>
       </div>
       <nav class="down">
+        <!-- SECOND NAVBAR MENU -->
         <ul>
           <% arrUl2.forEach(item => { %>
             <li><%= item %></li>
           <% }) %>
         </ul>
+        <!-- SECOND NAVBAR MENU -->
       </nav>
     </div>
   </header>
 
   <main>
-    
+    <!-- CARDS ELEMENT -->
+    <div class="first">
+      <div class="first_left">
+        <div class="img_relative">
+          <img src="../img/<%= img.png_jpg[11] %>" class="img_cover" alt="rocket">
+          <div class="img_absolute1">
+            <span><%= infoS.ss[0] %></span>
+          </div>
+        </div>
+      </div>
+      <div class="first_right">
+        <div class="relative_right">
+          <div class="top_first_right">
+            <div class="left_top_first_right">
+              <div class="img_relative">
+                <img src="../img/<%= img.png_jpg[10] %>" class="img_cover" alt="microsoftteams">
+                <div class="img_absolute2">
+                  <span><%= infoS.fs[0] %></span>
+                </div>
+                <div class="img_absolute1">
+                  <span><%= infoS.ss[1] %></span>
+                </div>
+              </div>
+            </div>
+            <div class="right_top_first_right">
+              <div class="img_relative">
+                <img src="../img/<%= img.png_jpg[5] %>" class="img_cover" alt="webb">
+                <div class="img_absolute2">
+                  <span><%= infoS.fs[1] %></span>
+                </div>
+                <div class="img_absolute1">
+                  <span><%= infoS.ss[2] %></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom_first_right">
+            <div class="img_relative">
+              <img src="../img/<%= img.png_jpg[7] %>" class="img_cover" alt="greetings">
+              <div class="img_absolute2">
+                <span><%= infoS.fs[2] %></span>
+              </div>
+              <div class="img_absolute1">
+                <span><%= infoS.ss[3] %></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARDS ELEMENT -->
+
+    <!-- LINK ELEMENT -->
+    <div class="link">
+      <span>MORE STORIES</span>
+    </div>
+    <!-- LINK ELEMENT -->
   </main>
+
+  <footer>
+    <div class="footer_nasa">
+      <div class="footer_logo">
+        <img src="../img/<%= img.svg[1] %>" alt="logo" class="logo">
+        <div class="author">
+          <span>National Aeronautics and Space Administration</span><br>
+          <span>NASA Unofficial: Beltz Ahnxton</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+
+    </div>
+  </footer>
 <%- include('./partials/footer.ejs') %>
